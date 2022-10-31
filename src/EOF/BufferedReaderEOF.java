@@ -7,7 +7,7 @@ public class BufferedReaderEOF {
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         //효율적으로 문자를 읽어들이기 위해서 버퍼링을 해줌. BufferedReader는 인자로 취한 Reader 스트림에 버퍼링기능을 추가한 입력스트림 클래스
         //키보드와 같은 사용자로부터 입력을 받는 표준입력스트 객체를 나타냄.
-        // 그래서, System.in의 리턴값은 InputStream임.
+        // System.in의 리턴값은 InputStream임.
         //※ InputStream : 입력스트림으로 부터,데이터를 byte단위로 읽어오는 byte stream임.
         BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(System.out));
         //*BufferedWriter :

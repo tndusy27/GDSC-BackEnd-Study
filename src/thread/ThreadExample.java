@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 public class ThreadExample extends Thread{//Thread클래스를 상속받고 run메소드를 오버라이딩한 후 스레드의 작업을 작성.
     private int order;
-//스레드는 순서대로 실행 X
+    //스레드는 순서대로 실행 X
     //run()메소를 구현했지만 run()을 실행하면 안됨.
     //start()를 실행해주어야함.
     //start()는 쓰레드를 생성할 준비를 하고 준비가 완료되면 run()을 실행해줌.
     public ThreadExample(int order){this.order=order;}
-    public void run(){//thread가 가지고 있는 run()메소드를 오버라이딩 함.
+    public void run(){ //thread가 가지고 있는 run()메소드를 오버라이딩 함.
          System.out.println(this.order+"번째 스레드 시작합니다.");
         try{
             Thread.sleep(1000);//쓰레드 시작하고 1초 쉬었다 종료하는 코드
