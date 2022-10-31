@@ -34,16 +34,14 @@ import java.util.List;
         //System.out.println(exampleString.getValue());//타입변환이 필요없음
     //}
 //}
-
-
 public class GenericExample {
     public static void main(String[] args) {
         MyGenericClass<Integer> exampleInteger = new MyGenericClass<>(); // MyGenericClass 클래스에 사용된 타입 변수로 Integer 타입을 사용
-        MyGenericClass<String> exampleString = new MyGenericClass<>(); //MyGenericClass 클래스에 사용된 타입 변수로 String 타입을 사용
+        //MyGenericClass<String> exampleString = new MyGenericClass<>(); //MyGenericClass 클래스에 사용된 타입 변수로 String 타입을 사용
 
         exampleInteger.setValue(1);
-        exampleString.setValue("Hello, generics!");
+        //exampleString.setValue("Hello, generics!");
         System.out.println(exampleInteger.getValue());//타입변환이 필요없음
-        System.out.println(exampleString.getValue());//타입변환이 필요없음
+        //System.out.println(exampleString.getValue());//타입변환이 필요없음
     }
 }
